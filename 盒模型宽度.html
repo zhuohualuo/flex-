@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .app {
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+    <h1>BFC</h1>
+    <div class="app">
+        盒模型宽度
+    </div>
+    <script>
+       let width = document.querySelector('.app').offsetWidth
+       console.log('width',width);
+       
+    </script>
+</body>
+</html>

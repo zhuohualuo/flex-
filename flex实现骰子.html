@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .ballFix {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #3a3434;
+    }
+    .boxFix {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        padding: 5px;
+        box-shadow: 2px 2px 10px grey;
+    }
+    .m20 {
+        margin: 20px;
+        float: left;
+    }
+    .h120 {
+        height: 120px;
+    }
+    .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box2 {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box3 {
+        display: flex;
+    }
+    .box3 .ball:nth-child(2) {
+        align-self: center;
+    }
+    .box3 .ball:nth-child(3) {
+        align-self: flex-end;
+    }
+    .box4 {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .row4 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box5 {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    .box5 .row5:nth-child(2) {
+        align-self: center;
+    }
+    .row5 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box6 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box7 {
+        display: flex;
+        flex-flow: column;
+    }
+    .row7_1 {
+        display: flex;
+        flex: 2;
+    }
+    .row7_1 .ball:nth-child(2) {
+        align-self: center;
+    }
+    .row7_1 .ball:nth-child(3) {
+        align-self: flex-end;
+    }
+    .row7_2 {
+        flex-wrap: wrap;
+    }
+    .row7_3 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box8 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box9 {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+    .row9 {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+<body>
+    <div class="box1 boxFix m20">
+        <div class="ball ballFix"></div>
+    </div>
+
+    <div class="box2 boxFix m20">
+        <div class="ball ballFix"></div>
+        <div class="ball ballFix"></div>
+    </div>
+
+    <div class="box3 boxFix m20">
+        <div class="ball ballFix"></div>
+        <div class="ball ballFix"></div>
+        <div class="ball ballFix"></div>
+    </div>
+
+    <div class="box4 boxFix m20">
+        <div class="row4">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row4">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+    </div>
+
+    <div class="box5 boxFix m20">
+        <div class="row5">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row5">
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row5">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+    </div>
+
+    <div class="box6 boxFix m20">
+        <div class="row6">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row6">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+    </div>
+
+    <div class="box7 boxFix m20">
+        <div class="row7_1">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row7_3">
+            <div class="row7_2">
+                <div class="ball ballFix"></div>
+                <div class="ball ballFix"></div>
+            </div>
+            <div class="row7_2">
+                <div class="ball ballFix"></div>
+                <div class="ball ballFix"></div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="box8 boxFix m20 h120">
+        <div class="row8">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row8">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+    </div>
+
+    <div class="box9 boxFix m20 h120">
+        <div class="row9">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row9">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+        <div class="row9">
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+            <div class="ball ballFix"></div>
+        </div>
+    </div>
+</body>
+</html>

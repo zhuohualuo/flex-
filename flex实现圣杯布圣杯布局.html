@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .top {
+        height: 100px;
+        width: 100%;
+        background: pink;
+    }
+    .content {
+        height: 400px;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .left {
+        height: 100%;
+        width: 200px;
+        background: red;
+    }
+    .center {
+        height: 100%;
+        background: orange;
+        flex: 1;
+    }
+    .right {
+        height: 100%;
+        width: 100px;
+        background: blue;
+    }
+    .bottom {
+        height: 100px;
+        /* width: 100%; */
+        background: pink;
+    }
+    .fl {
+        float: left;
+    }
+    .fr {
+        float: right;
+    }
+    .clearfix {
+        clear: both;
+        content: '';
+        display: table;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="content">
+            <div class="left"></div>
+            <div class="center">123</div>
+            <div class="right"></div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
