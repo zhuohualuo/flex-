@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Fun(id) {
+            this.el = document.querySelector(id)
+        }
+
+        Fun.prototype.html = function(val) {
+            let el = this.el
+            if(val) {
+                el.innerHTML = val
+                return this
+            }else {
+                return el.innerHTML 
+            }
+        }
+
+        Fun.prototype.on = function(type,fn) {
+            let el = this.el
+            el.addEventListener(type,fn)
+            return this
+        }
+
+        let f = new Fun('.title-article')
+        console.log(f.html());
+        f.on('click',fn)
+        
+    </script>
+</body>
+</html>

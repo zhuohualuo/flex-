@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Fun(name,age) {
+            this.name = name
+            this.age = age
+        }
+
+        Fun.prototype.getPlay = function() {
+            console.log(this.name);
+            
+        }
+
+        let f = new Fun('zs')
+        f.getFpaly = function() {
+            console.log(this.name);
+            
+        }
+        let a = f.getFpaly()
+        let b = f.getPlay()
+        let c = f.toString()
+        console.log('c',c);
+        
+    </script>
+</body>
+</html>

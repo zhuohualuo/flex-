@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a = 10
+        // function fn(){
+        //     // var a = 20
+        //     console.log('a',a);
+            
+        // }
+        // console.log('aa',a);
+        
+        // fn()
+
+        // for(let i = 0; i < 10; i++ ) {
+        //     let a = document.createElement('a')
+        //     a.innerText = i 
+        //     a.addEventListener('click',function(){
+        //         console.log('i',i);
+        //     })
+        //     document.body.appendChild(a)
+        // }
+            // function isHave(val) {
+            //         var arr = []
+            //    return function demo() {
+            //         if(arr.indexOf(val) !== -1) {
+            //             return false
+            //         }else {
+            //             arr.push(val)
+            //             return true
+            //         }
+            //     }
+
+            // }
+
+
+            function forEach(obj,fn) {
+                var key;
+                if(obj instanceof Array) {
+                    obj.forEach(function(item,index) {
+                        fn(index,item)
+                    })
+                }else {
+                    for(let k in obj) {
+                        fn(k,obj[k])
+                    }
+                }
+            }
+
+            forEach([1,2,3],function(item,index) {
+                console.log(item,index);
+                
+            })
+
+    </script>
+</body>
+</html>

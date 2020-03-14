@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = {
+            name: 'zs',
+            play: {
+                eating: 'shi'
+            }
+        }
+
+        function deepClone(obj) {
+            // debugger    
+            let sum = Array.isArray(obj) ? [] : {}
+            if(obj && typeof obj === 'object') {
+                for(let k in obj) {
+                    if(obj.hasOwnProperty(k)) {
+                        if(obj[k] && typeof obj[k] === 'object') {
+                            sum[k] = deepClone(obj[k])
+                        }else {
+                            sum[k] = obj[k]
+                        }
+                    }
+                }
+            }
+            return sum
+        }
+
+        let b = deepClone(a)
+        console.log('b',b);
+        
+
+
+    </script>
+</body>
+</html>

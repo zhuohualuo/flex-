@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let xml = new XMLHttpRequest()
+        xml.open('get','https://class.imooc.com/lesson/1037#mid=26037',true)
+
+        xml.onreadystatechange = function() {
+            if(xml.readyState === 4) {
+                if(xml.status === 200) {
+                    alert(xml.responseText)
+                }
+            }
+        }
+        xml.send(null)
+    </script>
+</body>
+</html>
